@@ -1,0 +1,29 @@
+@import './variables';
+@mixin flex-between_center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-around_center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin title-after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: $color-black;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
